@@ -1,165 +1,299 @@
-    html {
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    svg {
-      height: auto;
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;
-    }
-    .small-text {
-    font-size: 0.8em; /* Adjust the value as needed */
-    line-height: 1.2; /* Adjust line height for readability */
+html {
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 60em; /* Increased width for more content area */
+  padding-left: 10px; /* Reduced padding for wider content area */
+  padding-right: 10px; /* Reduced padding for wider content area */
+  padding-top: 20px; /* Reduced padding for wider content area */
+  padding-bottom: 20px; /* Reduced padding for wider content area */
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-family: "Arial", sans-serif; /* Ensure sans-serif for easy reading */
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+    padding: 12px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media print {
+  html {
+    background-color: white;
+  }
+  
+  body {
+    background-color: transparent;
+    color: black;
+    font-size: 12pt;
+  }
+  
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+}
+
+p, ul, ol, blockquote {
+  margin: 1em 0;
+  padding-left: 0; /* Ensure no extra padding */
+}
+
+a {
+  color: #1a1a1a;
+}
+
+a:visited {
+  color: #1a1a1a;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1.4em;
+  padding: 0.5em; /* Add padding to make the background color more visible */
+  border-radius: 0.3em; /* Optional: rounded corners for a softer look */
+  color: #ffffff; /* White text color for contrast */
+}
+
+h1 {
+  background-color: #ff6f61; /* Coral for main titles */
+  margin-left: 0; /* No indentation for top-level titles */
+}
+
+h2 {
+  background-color: #ff8a65; /* Lighter coral for section titles */
+  margin-left: 1.5em; /* Increased indentation for sub-section titles */
+}
+
+h3 {
+  background-color: #ffab91; /* Even lighter coral for subsection titles */
+  margin-left: 3em; /* Further increased indentation for sub-sub-section titles */
+}
+
+h4 {
+  background-color: #ffccbc; /* Very light coral for lower-level titles */
+  color: #ffffff; /* White text color for contrast */
+  margin-left: 4.5em; /* Further increased indentation for lower-level titles */
+}
+
+h1 + *, h2 + *, h3 + *, h4 + * {
+  margin-left: 0; /* Reset margin for elements directly following headings */
+  padding-left: 0; /* Reset padding */
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p {
+  margin-left: 0; /* Align text directly under headings with the heading's indentation */
+}
+
+h2 + * {
+  padding-left: 1.5em; /* Match the heading indentation for all elements following h2 */
+}
+
+h3 + * {
+  padding-left: 3em; /* Match the heading indentation for all elements following h3 */
+}
+
+h4 + * {
+  padding-left: 4.5em; /* Match the heading indentation for all elements following h4 */
+}
+
+ol, ul {
+  padding-left: 1.7em;
+  margin-top: 1em;
+}
+
+li > ol, li > ul {
+  margin-top: 0;
+}
+
+blockquote {
+  margin: 1em 0 1em 1.7em;
+  padding: 1em; /* Add padding inside the blockquote */
+  border-left: 4px solid #dbe9e3; /* Soft pastel teal for the left border */
+  background-color: #f4f9f4; /* Very light pastel green for the background */
+  color: #2e7d32; /* Darker green for the text to ensure readability */
+  border-radius: 0.3em; /* Rounded corners for a softer look */
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 85%;
+  margin: 0;
+  hyphens: manual;
+  white-space: pre-wrap; /* Ensure code wraps properly */
+}
+
+pre {
+  margin: 1em 0;
+  overflow: auto;
+}
+
+pre code {
+  padding: 0;
+  overflow: visible;
+  overflow-wrap: normal;
+}
+
+.sourceCode {
+  background-color: transparent;
+  overflow: visible;
+}
+
+hr {
+  background-color: #1a1a1a;
+  border: none;
+  height: 1px;
+  margin: 1em 0;
+}
+
+/* Table Styles */
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #e0f2f1; /* Very light teal for the table background */
+}
+
+table caption {
+  margin-bottom: 0.75em;
+  font-style: italic;
+  color: #004d40; /* Dark teal for caption text */
+}
+
+th {
+  background-color: #004d40; /* Dark teal for the header background */
+  color: #ffffff; /* White text color for headers */
+  border: 1px solid #004d40; /* Dark teal border color for header cells */
+  padding: 0.75em; /* Increased padding for readability */
+  text-align: left;
+  font-weight: bold;
+}
+
+td {
+  background-color: #ffffff; /* White background for table rows */
+  color: #333; /* Dark text color for readability */
+  border: 1px solid #004d40; /* Dark teal border color for body cells */
+  padding: 0.75em; /* Consistent padding with headers */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #b2dfdb; /* Light teal for odd rows */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff; /* White background for even rows */
+}
+
+@media (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  th, td {
+    padding: 0.5em;
+  }
+}
+
+header {
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+#TOC li {
+  list-style: none;
+}
+
+#TOC ul {
+  padding-left: 1.3em;
+}
+
+#TOC > ul {
+  padding-left: 0;
+}
+
+#TOC a:not(:hover) {
+  text-decoration: none;
+}
+
+span.smallcaps {
+  font-variant: small-caps;
+}
+
+div.columns {
+  display: flex;
+  gap: min(4vw, 1.5em);
+}
+
+div.column {
+  flex: auto;
+  overflow-x: auto;
+}
+
+div.hanging-indent {
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/* Task List Styles */
+ul.task-list[class] {
+  list-style: none;
+}
+
+ul.task-list li input[type="checkbox"] {
+  font-size: inherit;
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+
+.display.math {
+  display: block;
+  text-align: center;
+  margin: 0.5rem auto;
+}
+
+.small-text {
+  font-size: 0.8em; /* Adjust the value as needed */
+  line-height: 1.2; /* Adjust line height for readability */
+}
+
+/* Ruby Text Styles */
+ruby {
+  display: ruby;
+  font-size: 1em; /* Base font size for the ruby container */
+}
+
+rt {
+  font-size: 0.7em; /* 30% smaller than the base font size */
+  color: #555; /* Adjust color to make it distinct from the base text */
+  vertical-align: middle; /* Align ruby text properly */
+}
+
+rp {
+  display: none; /* Hide rp element, as it is rarely needed */
 }
