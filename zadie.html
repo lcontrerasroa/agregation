@@ -33,6 +33,24 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        .word-box {
+            margin-bottom: 20px;
+        }
+        .word-label {
+            display: inline-block;
+            width: 150px;
+        }
+        .feedback {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .exercise-section {
+            margin-top: 40px;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
     </style>
 </head>
 <body>
@@ -177,6 +195,70 @@
     <span class="character">"Please yourself. Don't know what you're missing, though."</span>
 </div>
 </div>
+
+
+    <div class="exercise-section">
+    <h2>Stress Pattern Exercises</h2>
+
+    <p>Enter the correct stress pattern for each of the underlined words from the text:</p>
+
+    <div class="word-box">
+        <span class="word-label">celebrating:</span>
+        <input type="text" id="celebrating-answer" placeholder="Enter stress pattern">
+        <button onclick="checkAnswer('celebrating', '/1000/')">Submit</button>
+        <span id="celebrating-feedback" class="feedback"></span>
+    </div>
+
+    <div class="word-box">
+        <span class="word-label">possibility:</span>
+        <input type="text" id="possibility-answer" placeholder="Enter stress pattern">
+        <button onclick="checkAnswer('possibility', '/20100/')">Submit</button>
+        <span id="possibility-feedback" class="feedback"></span>
+    </div>
+
+    <div class="word-box">
+        <span class="word-label">imagine:</span>
+        <input type="text" id="imagine-answer" placeholder="Enter stress pattern">
+        <button onclick="checkAnswer('imagine', '/010/')">Submit</button>
+        <span id="imagine-feedback" class="feedback"></span>
+    </div>
+
+    <div class="word-box">
+        <span class="word-label">directly:</span>
+        <input type="text" id="directly-answer" placeholder="Enter stress pattern">
+        <button onclick="checkAnswer('directly', '/010/')">Submit</button>
+        <span id="directly-feedback" class="feedback"></span>
+    </div>
+
+    <div class="word-box">
+        <span class="word-label">receptionist:</span>
+        <input type="text" id="receptionist-answer" placeholder="Enter stress pattern">
+        <button onclick="checkAnswer('receptionist', '/0100/')">Submit</button>
+        <span id="receptionist-feedback" class="feedback"></span>
+    </div>
+
+    <div class="word-box">
+        <span class="word-label">intermediary:</span>
+        <input type="text" id="intermediary-answer" placeholder="Enter stress pattern">
+        <button onclick="checkAnswer('intermediary', '/20100/')">Submit</button>
+        <span id="intermediary-feedback" class="feedback"></span>
+    </div>
+</div>
+
+<script>
+    function checkAnswer(word, correctAnswer) {
+        const userAnswer = document.getElementById(`${word}-answer`).value.trim();
+        const feedback = document.getElementById(`${word}-feedback`);
+        
+        if (userAnswer === correctAnswer) {
+            feedback.textContent = "Correct!";
+            feedback.style.color = "green";
+        } else {
+            feedback.textContent = `Wrong! The correct answer is ${correctAnswer}`;
+            feedback.style.color = "red";
+        }
+    }
+</script>
 
 </body>
 </html>
