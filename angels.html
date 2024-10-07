@@ -64,7 +64,7 @@
 <body>
 
 <div id="video-container">
-    <iframe src="https://youtu.be/c8GiP8_-ToM?si=-iBM5p1J8Q0H1fCk&t=113" 
+    <iframe src="https://www.youtube.com/embed/c8GiP8_-ToM?start=113" 
             title="YouTube video" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -145,7 +145,7 @@
     const videoContainer = document.getElementById("video-container");
 
     window.addEventListener("scroll", function() {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 75) {
             videoContainer.classList.add("pip");
         } else {
             videoContainer.classList.remove("pip");
