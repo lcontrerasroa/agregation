@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonemic Chart</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Phonemic Chart</h2>
+
+    <h3>Vowels</h3>
+    <table>
+        <tr>
+            <th colspan="4">Monophthongs</th>
+            <th colspan="2">Diphthongs</th>
+        </tr>
+        <tr>
+            <td><b>i:</b><br>sheep</td>
+            <td><b>ɪ</b><br>ship</td>
+            <td><b>ʊ</b><br>good</td>
+            <td><b>u:</b><br>shoot</td>
+            <td><b>ɪə</b><br>here</td>
+            <td><b>eɪ</b><br>wait</td>
+        </tr>
+        <tr>
+            <td><b>e</b><br>bed</td>
+            <td><b>ə</b><br>teacher</td>
+            <td><b>ɜ:</b><br>bird</td>
+            <td><b>ɔ:</b><br>door</td>
+            <td><b>ʊə</b><br>tourist</td>
+            <td><b>ɔɪ</b><br>boy</td>
+        </tr>
+        <tr>
+            <td><b>æ</b><br>cat</td>
+            <td><b>ʌ</b><br>up</td>
+            <td><b>ɑ:</b><br>far</td>
+            <td><b>ɒ</b><br>on</td>
+            <td><b>eə</b><br>hair</td>
+            <td><b>aɪ</b><br>my</td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td colspan="2"><b>aʊ</b><br>cow</td>
+        </tr>
+    </table>
+
+    <h3>Consonants</h3>
+    <table>
+        <tr>
+            <td><b>p</b><br>pea</td>
+            <td><b>b</b><br>boat</td>
+            <td><b>t</b><br>tea</td>
+            <td><b>d</b><br>dog</td>
+            <td><b>ʧ</b><br>cheese</td>
+        </tr>
+        <tr>
+            <td><b>ʤ</b><br>June</td>
+            <td><b>k</b><br>car</td>
+            <td><b>g</b><br>go</td>
+            <td><b>f</b><br>fly</td>
+            <td><b>v</b><br>video</td>
+        </tr>
+        <tr>
+            <td><b>θ</b><br>think</td>
+            <td><b>ð</b><br>this</td>
+            <td><b>s</b><br>see</td>
+            <td><b>z</b><br>zoo</td>
+            <td><b>ʃ</b><br>shall</td>
+        </tr>
+        <tr>
+            <td><b>ʒ</b><br>television</td>
+            <td><b>m</b><br>man</td>
+            <td><b>n</b><br>now</td>
+            <td><b>ŋ</b><br>sing</td>
+            <td><b>h</b><br>hat</td>
+        </tr>
+        <tr>
+            <td><b>l</b><br>love</td>
+            <td><b>r</b><br>red</td>
+            <td><b>w</b><br>wet</td>
+            <td><b>j</b><br>yes</td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>
