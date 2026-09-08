@@ -1,80 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fleabag Transcription (S02E01)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            white-space: pre-wrap;
-            margin: 0;
-            padding: 0;
-        }
-        #video-container {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 400px;
-            background-color: black;
-            z-index: 1000;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-        }
-        #content {
-            margin-top: 100px;
-            padding: 20px;
-            padding-left: 20%;
-            padding-right: 20%;
-            box-sizing: border-box;
-        }
-        #instructions {
-            padding: 10px;
-            padding-left: 20%;
-            padding-right: 20%;
-            background-color: #fdf6e3; /* Pastel yellow */
-            border: 1px solid #ffffff;
-            border-radius: 8px; /* Rounded corners */
-            margin-bottom: 15px;
-            font-size: 1.0em;
-            color: #333;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-            line-height: 1.2; /* Reduced line spacing */
-        }
-
-        #video-container.pip {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 300px;
-            height: 170px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease;
-        }
-        .character {
-            font-weight: bold;
-        }
-        .action {
-            font-style: italic;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fleabag · Agrégation · English phonology</title>
+<meta name="description" content="Study notes for the phonology part of the agrégation d'anglais: graphophonemics, stress, connected speech, intonation, SSBE and GA.">
+<link rel="stylesheet" href="styles.css">
+<script>try{var m=localStorage.getItem("rubyMode");if(m)document.documentElement.setAttribute("data-ruby",m)}catch(e){}</script>
 </head>
-<body>
+<body class="page-fleabag script-prewrap no-toc" data-chapter="practice">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false"><span class="burger"></span>Menu</button>
+  <a class="brand" href="index.html">Agrégation <span>· English phonology</span></a>
+  <div class="header-tools">
+    <div class="ruby-switch" role="group" aria-label="Transcription display">
+      <span class="label">Transcriptions</span>
+      <button type="button" data-ruby="above" aria-pressed="true">above</button>
+      <button type="button" data-ruby="inline" aria-pressed="false">inline</button>
+      <button type="button" data-ruby="hidden" aria-pressed="false">quiz</button>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop"></div>
+<div class="layout">
+<nav id="site-nav" class="site-nav" aria-label="Site navigation">
+<ul class="nav-home"><li><a href="index.html">Home / contents</a></li></ul>
+<h2>Chapters</h2>
+<ul>
+<li><details><summary><span class="nav-num">1</span><a href="graphophonemics.html">Graphophonemics</a></summary><ul><li><a href="graphophonemics.html#base-values-of-graphic-vowels">Base values of graphic vowels</a></li><li><a href="graphophonemics.html#digraphs">Digraphs</a></li><li><a href="graphophonemics.html#full-and-reduced-grammatical-words">Full and reduced grammatical words</a></li></ul></details></li>
+<li><details><summary><span class="nav-num">2</span><a href="stress.html">Stress</a></summary><ul><li><a href="stress.html#simple-non-suffixed-words">Simple (non-suffixed) words</a></li><li><a href="stress.html#suffixed-non-simple-words">Suffixed (non-simple) words</a></li><li><a href="stress.html#compound-words-and-phrases">Compound words and phrases</a></li></ul></details></li>
+<li><details><summary><span class="nav-num">3</span><a href="phonetic-processes.html">Phonetic processes in connected speech</a></summary><ul><li><a href="phonetic-processes.html#linking-sandhi-liaison">Linking / sandhi / liaison</a></li><li><a href="phonetic-processes.html#compression">Compression</a></li><li><a href="phonetic-processes.html#aspiration">Aspiration</a></li><li><a href="phonetic-processes.html#no-audible-release">No audible release</a></li><li><a href="phonetic-processes.html#nasalization">Nasalization</a></li><li><a href="phonetic-processes.html#assimilation">Assimilation</a></li><li><a href="phonetic-processes.html#elision">Elision</a></li><li><a href="phonetic-processes.html#epenthesis">Epenthesis</a></li></ul></details></li>
+<li><details><summary><span class="nav-num">4</span><a href="suprasegmentals.html">Suprasegmentals</a></summary><ul><li><a href="suprasegmentals.html#the-three-ts-tonality-tonicity-tone">The three Ts: tonality, tonicity, tone</a></li></ul></details></li>
+<li><details><summary><span class="nav-num">5</span><a href="ssbe-ga.html">SSBE and GA</a></summary><ul><li><a href="ssbe-ga.html#rhoticity">Rhoticity</a></li><li><a href="ssbe-ga.html#t-voicing">T-voicing</a></li><li><a href="ssbe-ga.html#cot-caught-merger">COT-CAUGHT merger</a></li><li><a href="ssbe-ga.html#goat-vowel">GOAT vowel</a></li><li><a href="ssbe-ga.html#ask-vowel">ASK vowel</a></li><li><a href="ssbe-ga.html#yod-dropping">Yod-dropping</a></li><li><a href="ssbe-ga.html#schwa-over-ɪ">Schwa over /ɪ/</a></li></ul></details></li>
+</ul>
+<h2>Practice</h2><ul>
+<li><a href="fleabag.html" aria-current="page">Fleabag</a></li>
+<li><a href="zadie.html">White Teeth</a></li>
+<li><a href="earnest.html">The Importance of Being Earnest</a></li>
+<li><a href="angels.html">Angels in America</a></li>
+</ul><h2>Reference</h2><ul>
+<li><a href="consonants-vowels.html">Phonemic chart</a></li>
+</ul>
+</nav>
+<main id="main" class="content">
+<article class="doc">
 
+
+<!-- content:start -->
+<div class="practice-grid">
 <div id="video-container">
-    <iframe src="https://www.youtube.com/embed/XM_vefU_pTE?autoplay=1" 
+    <iframe loading="lazy" src="https://www.youtube.com/embed/XM_vefU_pTE" 
             title="YouTube video" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
     </iframe>
 </div>
-
 <div id="instructions">
-    <h1>Graphophonemics exercise</h1>
+    <h1 id="graphophonemics-exercise">Graphophonemics exercise</h1>
     <p>In this section, you will find a transcription of a scene from Fleabag. As you read through, pay attention to the character pronunciations.</p>
     <p><strong>Steps:</strong></p>
     <ol>
@@ -84,9 +68,7 @@
     </ol>
     <p><strong>Find examples of the pronunciations of all five graphic vowels ‹a, e, i, o, u›, in all of their values (checked, free, r-modified or non-r-modified)</strong></p>
 </div>
-
-<div id="content">
-    <h1>Excerpt from <i>Fleabag</i> by Phoebe Waller Bridge</h1>
+<div id="content"><h1 id="excerpt-from-fleabag-by-phoebe-waller-bridge">Excerpt from <i>Fleabag</i> by Phoebe Waller Bridge</h1>
 INT. RESTAURANT — NIGHT
 <span class="action">Later. Dad holds his glass mid-toast. Fleabag is now holding a tequila shot. Godmother, Martin, and Claire listen to Dad speak.<br><br>We reveal there’s also an UNFAMILIAR MAN at the table, also listening. He is dressed in a regular shirt and trousers, but we will later find out that this is <span class="character">PRIEST</span>.</span>
 <br><br><span class="character">DAD</span>
@@ -149,7 +131,6 @@ You look well, where have you been?
 <br><br><span class="character">FLEABAG</span>
 Boots. Lovely there this time of year.
 <span class="action"><br><br>Claire is not amused.</span>
-
 <br><br>INT. RESTAURANT — NIGHT
 <span class="action">We return to Fleabag, Claire, Godmother, Dad, Martin, and Priest at the table.</span>
 <br><br><span class="character">DAD</span>
@@ -229,7 +210,6 @@ Now the most FASCINATING thing about Father here is that his mother was original
 
 <br><br>EXT. BACK OF RESTAURANT – NIGHT
 <span class="action">Fleabag is leaning, head against a wall. One hand has a cigarette in it. She exhales deeply.</span>
-
 <br><br>INT. RESTAURANT – NIGHT
 <span class="action">Fleabag is back at the table with Claire, Godmother, Dad, Martin, and Priest. Their starter plates are being cleared away by the Needy Waitress.</span>
 <br><br><span class="character">GODMOTHER</span>
@@ -376,24 +356,15 @@ It actually is.
 It is.
 <br><br><span class="character">NEEDY WAITRESS</span><br><br>Can I get anyone any ice?<br><br>
 </div>
-
-<script>
-    const videoContainer = document.getElementById("video-container");
-
-    window.addEventListener("scroll", function() {
-        if (window.scrollY > 300) {
-            videoContainer.classList.add("pip");
-        } else {
-            videoContainer.classList.remove("pip");
-        }
-    });
-</script>
-
-<footer style="text-align: center; padding: 10px; border-top: 1px solid #ccc; margin-top: 20px;">
-    <nav>
-        <a href="index.html" style="margin-right: 20px;">Index</a>
-    </nav>
-</footer>
-    
+</div>
+<!-- content:end -->
+</article>
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="ssbe-ga.html"><small>Previous</small>SSBE and GA</a><a class="next" href="zadie.html"><small>Next</small>White Teeth</a></nav>
+</main>
+<aside class="toc" aria-hidden="true"></aside>
+</div>
+<footer class="site-footer">Leonardo Contreras Roa · Université de Picardie Jules Verne · <a href="https://github.com/lcontrerasroa/agregation">source</a></footer>
+<button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+<script src="site.js"></script>
 </body>
 </html>
